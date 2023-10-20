@@ -178,3 +178,97 @@
         }
     }
 }
+
+.s-ofertas {
+    padding: 2rem 0;
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 0 5rem;
+        .padding {
+            padding: 5rem;
+            .card-oferta {
+                height: 52rem;
+                background-color: bisque;
+                border-radius: 6px;
+                overflow: hidden;
+                .image {
+                    position: relative;
+                    width: 100%;
+                    height: 34rem;
+                    overflow: hidden;
+                    border-bottom: 3px white;
+                    b > img {
+                       width: 100%;
+                       height: 100%;
+                       object-fit: cover; 
+                    }
+                }
+
+                .info {
+                    padding: 2rem 4.4rem;
+                    h3 {
+                        color: #613e0a;
+                        font-size: 1.6rem;
+                        font-weight: bold;
+                        letter-spacing: -0.201px;
+                        margin-bottom: 1.4rem;
+                        display: block;
+                    }
+                    span {
+                        color: #ff8903;
+                        font-size: 3.2rem;
+                        font-weight: bold;
+                        letter-spacing: 1.477px;
+                        text-transform: uppercase;
+                    }
+                    div {
+                        padding-top: 1.5rem;
+                        button {
+                            padding: 1.5rem 3rem;
+                            background-color: #ff8903;
+                            font-weight: 700;
+                            font-size: 1.8rem;
+                            line-height: 2rem;
+                        }
+                    }
+                    &:hover {
+                        button { 
+                            background-color: #b6660b;
+                            transition: all .3s ease;
+                        }
+                    }
+                }
+                @media(max-width: 560px) {
+                    .image {
+                        height: 25rem;
+                    }
+                }
+                @media(max-width: 991px) {
+                    .image {
+                        height: 25rem;
+                    }
+                }
+            }
+            @media(max-width: 560px) {
+                .card-oferta {
+                    height: 45rem;
+                }
+            }
+            @media(max-width: 991px) {
+                .image {
+                    height: 44rem;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 560px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}
+
+}
